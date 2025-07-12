@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+pnpm-debug.log*
+
+# sst
+.sst
+.build
+sst.pyi
+sst-env.d.ts
+
+# misc
+.DS_Store
+
+# env files
+.env
+.env.*
+
+# local files
+*.local
+
+# build output
+dist/
+build/
+
+# caches
+.cache/
+

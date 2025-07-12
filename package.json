@@ -1,0 +1,35 @@
+{
+  "name": "@monorepo/root",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "release": "sst deploy --stage production",
+    "update": "pnpm up -i -r --latest",
+    "sso": "aws sso login --profile=sockthedev"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.150",
+    "@types/node": "24.0.13",
+    "prettier": "3.6.2",
+    "prettier-plugin-embed": "0.5.0",
+    "prettier-plugin-organize-imports": "4.1.0",
+    "prettier-plugin-tailwindcss": "0.6.14",
+    "sst": "3.17.10",
+    "typescript": "5.8.3",
+    "vite": "7.0.4",
+    "vite-tsconfig-paths": "5.1.4",
+    "vitest": "3.2.4"
+  },
+  "packageManager": "pnpm@10.12.4",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "aws-sdk"
+    ]
+  },
+  "dependencies": {
+    "sst": "3.17.10"
+  }
+}

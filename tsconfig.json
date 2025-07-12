@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.module.json",
+  "compilerOptions": {
+    /* we need to switch these off to avoid .sst/ type errors */
+    "noUncheckedIndexedAccess": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "verbatimModuleSyntax": false,
+    "baseUrl": "."
+  },
+  "exclude": [
+    "pkgs/"
+  ]
+}

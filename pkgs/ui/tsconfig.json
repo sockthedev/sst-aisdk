@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.module.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2023"
+    ],
+    "paths": {
+      "@monorepo/core/*": [
+        "../core/src/*"
+      ],
+      "@monorepo/functions/*": [
+        "../functions/src/*"
+      ],
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
